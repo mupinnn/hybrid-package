@@ -1,17 +1,19 @@
 {
   "name": "@mupinnn/hybrid-package",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "main": "./dist/cjs/hybrid.cjs",
+  "types": "./dist/types/index.d.ts",
   "exports": {
     "import": "./dist/esm/hybrid.mjs",
     "require": "./dist/cjs/hybrid.cjs",
-    "default": "./dist/cjs/hybrid.cjs"
+    "default": "./dist/cjs/hybrid.cjs",
+    "types": "./dist/types/index.d.ts"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && rollup -c -m"
+    "build": "rm -rf dist && tsc && rollup -c -m"
   },
   "keywords": [],
   "license": "MIT",
@@ -23,6 +25,7 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-terser": "^0.4.0",
     "rollup": "^3.20.2",
-    "rollup-plugin-bundle-size": "^1.0.3"
+    "rollup-plugin-bundle-size": "^1.0.3",
+    "typescript": "^4.9.5"
   }
 }

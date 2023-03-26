@@ -6,6 +6,7 @@ specifiers:
   '@rollup/plugin-terser': ^0.4.0
   rollup: ^3.20.2
   rollup-plugin-bundle-size: ^1.0.3
+  typescript: ^4.9.5
 
 devDependencies:
   '@rollup/plugin-commonjs': 24.0.1_rollup@3.20.2
@@ -13,6 +14,7 @@ devDependencies:
   '@rollup/plugin-terser': 0.4.0_rollup@3.20.2
   rollup: 3.20.2
   rollup-plugin-bundle-size: 1.0.3
+  typescript: 4.9.5
 
 packages:
 
@@ -427,6 +429,12 @@ packages:
       acorn: 8.8.2
       commander: 2.20.3
       source-map-support: 0.5.21
+    dev: true
+
+  /typescript/4.9.5:
+    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: true
 
   /wrappy/1.0.2:
