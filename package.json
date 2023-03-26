@@ -1,9 +1,17 @@
 {
   "name": "@mupinnn/hybrid-package",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "./dist/cjs/hybrid.cjs",
+  "exports": {
+    "import": "./dist/esm/hybrid.js",
+    "require": "./dist/cjs/hybrid.cjs",
+    "default": "./dist/cjs/hybrid.cjs"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && rollup -c -m"
   },
   "keywords": [],
   "license": "MIT",
@@ -13,6 +21,8 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
-    "rollup": "^3.20.2"
+    "@rollup/plugin-terser": "^0.4.0",
+    "rollup": "^3.20.2",
+    "rollup-plugin-bundle-size": "^1.0.3"
   }
 }
