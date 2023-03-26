@@ -18,7 +18,7 @@ module.exports = [
     input: './src/index.js',
     output: {
       name: NAME,
-      file: `dist/esm/${NAME}.js`,
+      file: `dist/esm/${NAME}.mjs`,
       format: 'esm',
       exports: 'named',
     },

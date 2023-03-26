@@ -1,9 +1,9 @@
 {
   "name": "@mupinnn/hybrid-package",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "./dist/cjs/hybrid.cjs",
   "exports": {
-    "import": "./dist/esm/hybrid.js",
+    "import": "./dist/esm/hybrid.mjs",
     "require": "./dist/cjs/hybrid.cjs",
     "default": "./dist/cjs/hybrid.cjs"
   },
